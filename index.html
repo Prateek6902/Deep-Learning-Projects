@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Proctoring Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="theme-color" content="#10002b">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="fas fa-video"></i>
+            <span>Trust Proctor</span>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="main-card">
+            <h1><i class="fas fa-shield-alt"></i> Video Analysis System</h1>
+            <p class="subtitle">Upload your video for proctoring analysis</p>
+            
+            <div class="upload-section">
+                <form id="uploadForm">
+                    <div class="file-upload">
+                        <input type="file" id="videoInput" accept="video/*" required>
+                        <label for="videoInput">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Choose a video file</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="analyze-btn">
+                        <i class="fas fa-search"></i> Analyze Video
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="results" class="results-section">
+            <div id="resultsList"></div>
+            <div class="graph-container">
+                <canvas id="suspiciousGraph"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; @2025 Code & Capital</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

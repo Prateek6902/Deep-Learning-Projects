@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #10002b;
+    --primary-light: #240046;
+    --secondary-color: #3c096c;
+    --accent-color: #7b2cbf;
+    --success-color: #4cc9f0;
+    --error-color: #ff4d6d;
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --background-light: #1a0040;
+    --background-dark: #10002b;
+    --card-background: #1a0040;
+}
+
+.analysis-summary {
+    background: var(--card-background);
+    color: var(--text-primary);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stat {
+    background: var(--background-light);
+    color: var(--text-primary);
+    border: 1px solid var(--accent-color);
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+.stat-value {
+    color: var(--text-primary);
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.stat-value.suspicious {
+    color: var(--error-color);
+}
+
+.stat-value.normal {
+    color: var(--success-color);
+}
+
+.activities-list {
+    margin-top: 20px;
+}
+
+.activity-item {
+    background: var(--background-light);
+    color: var(--text-primary);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.activity-item.high {
+    border-left-color: var(--error-color);
+}
+
+.activity-time {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+.activity-warning {
+    color: var(--text-primary);
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.activity-pose {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+#suspiciousGraph {
+    background: var(--background-light);
+}
+
+.results-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.results-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.loading {
+    color: var(--text-primary);
+}
+
+.notification {
+    background: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.notification.error {
+    border-color: var(--error-color);
+}
+
+.notification.success {
+    border-color: var(--success-color);
+}
+
+.graph-container {
+    background: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
