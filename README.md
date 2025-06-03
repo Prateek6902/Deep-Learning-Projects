@@ -41,6 +41,22 @@
 5. Suspicious events are logged with timestamps and severity.
 6. JSON results are returned and visualized in the browser.
 
+
+Requirements
+Python 3.7+
+pip "
+
+🤝 Acknowledgements
+MediaPipe
+OpenCV
+Flask
+Font Awesome
+Chart.js
+
+🧑‍💻 This is an original project developed by me for academic/research/personal purposes.
+Feel Free to use and modify as per your suit.
+
+##" 💻 Run Locally
 ### Sample Detection Output (JSON):
 ```json
 {
@@ -58,20 +74,6 @@
   ]
 }
 
-##" 💻 Run Locally
-Requirements
-Python 3.7+
-pip "
-
-🤝 Acknowledgements
-MediaPipe
-OpenCV
-Flask
-Font Awesome
-Chart.js
-
-🧑‍💻 This is an original project developed by me for academic/research/personal purposes.
-Feel Free to use and modify as per your suit.
 
 
 
